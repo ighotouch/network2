@@ -17,7 +17,15 @@
     <!--Import materialize.css-->
     <!-- Compiled and minified CSS -->
     {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">--}}
+<!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
 
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+{{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -92,7 +100,64 @@
     <!-- Compiled and minified JavaScript -->
 
 
-    <script src="/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!-- Inline Script for colors and config objects; used by various external scripts; -->
+    <script>
+        var colors = {
+            "danger-color": "#e74c3c",
+            "success-color": "#81b53e",
+            "warning-color": "#f0ad4e",
+            "inverse-color": "#2c3e50",
+            "info-color": "#2d7cb5",
+            "default-color": "#6e7882",
+            "default-light-color": "#cfd9db",
+            "purple-color": "#9D8AC7",
+            "mustard-color": "#d4d171",
+            "lightred-color": "#e15258",
+            "body-bg": "#f6f6f6"
+        };
+        var config = {
+            theme: "html",
+            skins: {
+                "default": {
+                    "primary-color": "#42a5f5"
+                }
+            }
+        };
+    </script>
+
+    <!--- <script src="js/mit.js"></script> -->
+    <!--- <script src="js/all.js"></script> -->
+    <!--- <script src="js/app.js"></script> -->
+
+    <script src="js/vendor/core/jquery.js"></script>
+    <script src="js/vendor/core/bootstrap.js"></script>
+    <script src="js/vendor/core/breakpoints.js"></script>
+    <script src="js/vendor/core/jquery.nicescroll.js"></script>
+    <script src="js/vendor/core/isotope.pkgd.js"></script>
+    <script src="js/vendor/core/packery-mode.pkgd.js"></script>
+    <script src="js/vendor/core/jquery.grid-a-licious.js"></script>
+    <script src="js/vendor/core/jquery.cookie.js"></script>
+    <script src="js/vendor/core/jquery-ui.custom.js"></script>
+    <script src="js/vendor/core/jquery.hotkeys.js"></script>
+    <script src="js/vendor/core/handlebars.js"></script>
+    <script src="js/vendor/core/jquery.hotkeys.js"></script>
+    <script src="js/vendor/core/load_image.js"></script>
+    <script src="js/vendor/core/jquery.debouncedresize.js"></script>
+    <script src="js/vendor/core/modernizr.js"></script>
+    <script src="js/vendor/core/velocity.js"></script>
+    <script src="js/vendor/tables/all.js"></script>
+    <script src="js/vendor/forms/all.js"></script>
+    <script src="js/vendor/media/slick.js"></script>
+    <script src="js/vendor/charts/flot/all.js"></script>
+    <script src="js/vendor/nestable/jquery.nestable.js"></script>
+    <script src="js/vendor/countdown/all.js"></script>
+    <script src="js/vendor/angular/all.js"></script>
+    <script src="js/app/essentials.js"></script>
+    <script src="js/app/material.js"></script>
+    <script src="js/app/layout.js"></script>
+
+    <script src="js/app/media.js"></script>
+    <script src="js/app/messages.js"></script>
+
 </body>
 </html>
