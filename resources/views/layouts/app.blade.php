@@ -26,6 +26,8 @@
 {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
     <link href="/css/all.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
+    <link href="{{ asset('css/all.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
