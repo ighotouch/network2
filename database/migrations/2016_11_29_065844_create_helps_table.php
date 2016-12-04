@@ -20,7 +20,7 @@ class CreateHelpsTable extends Migration
             $table->string('status');
             $table->string('currency');
             $table->integer('account_id');
-            $table->enum('type', ['provided', 'requested']);
+            $table->enum('type', ['bank', 'bitcoin']);
             $table->boolean('isAvailable')->default(false);
             $table->timestamps();
         });
