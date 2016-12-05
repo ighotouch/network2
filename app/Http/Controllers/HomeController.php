@@ -3,9 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use App\Account;
+use Auth;
 
 class HomeController extends Controller
 {
+    protected $authUser;
+
+
     /**
      * Create a new controller instance.
      *
@@ -14,6 +20,7 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        $this->authUser = Auth::user();
     }
 
     /**
@@ -23,6 +30,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $accounts= Account::where('user_id', $this->authUser['id'])->first();
+        return view('home',compact('accounts'));
     }
 }

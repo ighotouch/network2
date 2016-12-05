@@ -9,7 +9,18 @@
                 <div class="panel-body">
                     <form class="form-horizontal " style="padding: 16px" role="form" method="POST" action="{{ url('/register') }}">
                         {{ csrf_field() }}
-
+                        <div class="form-group{{ $errors->has('invited_by') ? ' has-error' : '' }}">
+                            <div class="form-control-material ">
+                                <input class="form-control" id="invited_by" name="invited_by" type="text" value="{{ old('invited_by') }}"
+                                       placeholder="Invited By">
+                                <label for="name">InvitedBy:</label>
+                                @if ($errors->has('name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('invited_by') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -20,6 +31,19 @@
                                 @if ($errors->has('name'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
+                            <div class="form-control-material ">
+                                <input class="form-control" id="username" name="username" type="text" value="{{ old('username') }}"
+                                       placeholder="Username">
+                                <label for="name">username</label>
+                                @if ($errors->has('name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('username') }}</strong>
                                     </span>
                                 @endif
                             </div>
